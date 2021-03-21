@@ -17,7 +17,7 @@ body {
     'slider sidebar';
   height: 100vh;
   width: 100vw;
-  background-color: #dadada;
+  background-color: #282828;
 }
 
 .main-image {
@@ -32,8 +32,8 @@ body {
 
 .sidebar {
   grid-area: sidebar;
-  background-color: hsl(265, 100%, 86%);
-  border-left: 1px solid hsl(265, 100%, 56%);
+  background-color: #525252;
+  border-left: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -43,29 +43,19 @@ body {
   cursor: pointer;
   border: none;
   outline: none;
-  background-color: hsl(265, 100%, 86%);
+  background-color: #535353;
   padding: 1rem;
   position: relative;
   transition: background-color 150ms;
+  color: rgb(230, 230, 230);
+  font-weight: bold;
+  border-bottom: 1px solid rgb(53, 53, 53);
 }
 
 .sidebar-item:hover,
-.sidebar-item:focus {
-  background-color: hsl(265, 100%, 76%);
-}
-
+.sidebar-item:focus,
 .sidebar-item.active {
-  background-color: hsl(265, 100%, 70%);
-}
-
-.sidebar-item::after {
-  content: '';
-  position: absolute;
-  width: 80%;
-  left: 10%;
-  bottom: 0;
-  height: 1px;
-  background-color: hsl(265, 100%, 46%);
+  background-color: #454545;
 }
 
 .sidebar-item:last-child::after {
@@ -79,6 +69,27 @@ body {
 }
 
 .slider {
+  -webkit-appearance: none;
   width: 100%;
+  background: #737373;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background: #f0f0f0;
   cursor: pointer;
 }
