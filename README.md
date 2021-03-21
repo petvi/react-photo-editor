@@ -1,5 +1,5 @@
 ## Photo Editor
-Basic photo editing for.
+Online photo editor for basic use.
 
 ### [Live Preview](https://petvi-photo-editor.netlify.app/)
 
